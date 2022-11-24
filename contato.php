@@ -1,6 +1,19 @@
 <?php
     include ("conexao.php");
+
+    if(!isset($_SESSION)){
+        session_start();
+    }
     
+    if(isset($_POST['nome'])){
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $mensagem = $_POST['mensagem'];
+
+        $mysqli->query("INSERT INTO mensagem (nome, email, mensagem) VALUES ('$nome', '$email', '$mensagem')") or die ($mysqli->error);
+
+        $_SESSION['msg'] = "<div class='alert alert-success'> Mensagem enviado com sucesso. </div>";
+    }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -52,6 +65,13 @@
                     <button type="submit" class="btn btn-default">Enviar</button>
                     <button type="reset" class="btn btn-default">Limpar</button>
                 </div>
+                <?php
+                    if(isset($_SESSION['msg'])){
+                        echo $_SESSION['msg'];                        
+                        
+                        unset($_SESSION['msg']);                   
+                    }
+                ?> 
             </form>
         </div> 
         <script src="boo1\jquery.js"></script>
