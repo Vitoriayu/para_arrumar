@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(219, 241, 89);
+}
+    .jumbotron{
+        background-color: rgb(83, 93, 240);
+    }
+ .btn-primary{
+     color: rgb(2, 13, 15);
+     background-color: rgb(233, 214, 43);
+     border-color: rgb(241, 100, 35);
+ }
+ textarea.form-control{
+     font-size: larger;
+ } 
+ h2{                 
+    color:rgb(223, 220, 61);
+}
+#teste{
+    color:#eeca55;
+}
+.jumbotron h1{
+   background-color: rgba(235, 55, 85, 0.932);
+}
+strong{
+    font-size: 20px;
+}
+h1{
+    color:deeppink
+}
+a.btn.btn-primary.btn-lg{
+    background-color: rgba(235, 55, 85, 0.932)
+}
+strong{
+    color:rgb(26, 1, 11)
+}
+.navbar-default .navbar-brand{
+    color:rgba(235, 55, 85, 0.932);
+}
+.navbar-default .navbar-nav>.active>a{
+    color: rgba(235, 55, 85, 0.932);
+    background-color:rgb(219, 241, 89);
+}
+#link_personagens{
+    background-color: rgb(219, 241, 89);
+}
+
+#link_personagens:hover{
+    background-color: rgb(219, 241, 89);
+}
+#link_Menu{
+    background-color: rgb(219, 241, 89);
+}
+a.navbar-brand{
+   color: blue;
+}

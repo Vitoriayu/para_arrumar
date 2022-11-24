@@ -1,0 +1,9 @@
+body{
+    background-color:rgb(219, 241, 89);
+}
+h1{
+    color:rgba(235, 55, 85, 0.932);
+}
+a:-webkit-any-link{
+ color: rgb(68, 31, 233);
+}
