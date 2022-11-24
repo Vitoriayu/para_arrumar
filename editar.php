@@ -11,16 +11,7 @@
         echo "Não tem dados para alterar";
     }
 
-    if(isset($_POST['nome'])){
-        $nome = "teste";
-        $email = $_POST["email"];
-        $mensagem = $_POST["mensagem"];
-
-        $sql_editar = "UPDATE mensagem SET nome = '$nome', email= '$email',
-             mensagem = '$mensagem'
-             WHERE id_mensagem = $id_mensagem'";
-             $deucerto = $mysqli->query($sql_editar) or die ($mysqli->error);
-    }  
+    
     
       
 ?>
@@ -61,7 +52,7 @@
         <div class="container">
 
             <h1>Editar:</h1>
-            <form action="cadastrar.php" method="post"> 
+            <form action="editar_confirmar.php" method="post"> 
                 <div class="form-group">
                     <label for="">Nome:</label> 
                     <input value="<?php echo $mensagem['nome']?>" name="nome" required type="text" class="form-control">

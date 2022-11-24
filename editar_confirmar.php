@@ -2,9 +2,18 @@
 <?php
 include ("conexao.php");
 
-$nome = $_POST["nome"];
-$email = $_POST["email"];
-$mensagem = $_POST["mensagem"];
+if(isset($_POST['nome'])){
+    $nome = $_POST["nome"];
+    $email = $_POST["email"];
+    $mensagem = $_POST["mensagem"];
+
+    $sql_editar = "UPDATE mensagem SET nome = '$nome', email= '$email',
+         mensagem = '$mensagem'
+         WHERE id_mensagem = $id_mensagem'";
+         $deucerto = $mysqli->query($sql_editar) or die ($mysqli->error);
+}  
+
+
 
    echo "<h1> Dados Recebidos:</h1>";
    echo "<p> O nome recebido foi: " .$nome . "</p>";
@@ -23,7 +32,7 @@ $mensagem = $_POST["mensagem"];
 <title>Document</title>
 </head>
 <body>
-    <a href="contato.html">Voltar</a>
+    <a href="central_mensagem.php">Voltar</a>
 </body>
 </html>
    
