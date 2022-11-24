@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 24-Nov-2022 às 11:03
+-- Tempo de geração: 24-Nov-2022 às 14:01
 -- Versão do servidor: 5.7.36
 -- versão do PHP: 7.4.26
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `desenho`
 --
+CREATE DATABASE IF NOT EXISTS `desenho` DEFAULT CHARACTER SET ucs2 COLLATE ucs2_bin;
+USE `desenho`;
 
 -- --------------------------------------------------------
 
@@ -42,10 +44,7 @@ CREATE TABLE IF NOT EXISTS `mensagem` (
 --
 
 INSERT INTO `mensagem` (`id_mensagem`, `nome`, `email`, `mensagem`, `log`) VALUES
-(39, 'Dieimes', 'hrtdhh@dsfdsf', 'hgrh', '2022-11-24 07:44:09'),
-(40, 'Dieimes NUnes', 'hrtdhh@sfdsdf', 'hgrh', '2022-11-24 07:57:27'),
-(41, 'Dieimes NUness', 'hrtdhh@sfdsdf', 'hgrh', '2022-11-24 07:57:40'),
-(38, 'thdth', 'hrtdhh', 'hgrh', '2022-11-24 07:36:46');
+(41, 'Dieimes NUness', 'hrtdhh@sfdsdf', 'hgrh', '2022-11-24 07:57:40');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
