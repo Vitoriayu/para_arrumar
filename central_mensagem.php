@@ -34,7 +34,7 @@
         </button>
             <a id="link_Menu" class="navbar-brand" href="desenho.html">Menu</a>
             <a id="link_Menu" class="navbar-brand" href="central_mensagem.php">Central</a>
-            <a id="link_Menu" class="navbar-brand" href="contato.html">Contato</a>
+            <a id="link_Menu" class="navbar-brand" href="contato.php">Contato</a>
         </div>                     
 
         <!-- Collect the nav links, forms, and other content for toggling -->
